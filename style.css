@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  
+  .container > * {
+    border: dotted 2px black;
+  }
+  
+  .container {
+    min-height: 100vh;
+  
+    display: grid;
+    grid-template:
+      "header header header" 50px
+      "left-menu main right-menu" 1fr /
+      1fr 350px 50px;
+    gap: 8px;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .left-menu {
+    grid-area: left-menu;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+  
+  .right-menu {
+    grid-area: right-menu;
+  }
+  

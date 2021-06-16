@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .grid-container > * {
+    border: 2px dotted lightblue;
+  }
+  
+  .grid-container {
+    min-height: 100vh;
+  
+    display: grid;
+    grid-template:
+      "header header header header header" 50px
+      ". user-info content-feed news-sidebar ." 1fr /
+      1fr 200px 600px 200px 1fr;
+    gap: 8px;
+  }
+  
+  .main-header {
+    grid-area: header;
+  }
+  
+  .user-info {
+    grid-area: user-info;
+  }
+  
+  .content-feed {
+    grid-area: content-feed;
+  }
+  
+  .news-sidebar {
+    grid-area: news-sidebar;
+  }
